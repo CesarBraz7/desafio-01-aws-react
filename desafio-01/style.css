@@ -1,0 +1,34 @@
+:root {
+    --bg-color: #FF6064;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 612px;
+}
+
+#logo-pomo {
+    width: 300px;
+}
+
+#loading {
+    width: 90px;
+}
