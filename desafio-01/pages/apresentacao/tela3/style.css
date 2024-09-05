@@ -20,7 +20,22 @@ main{
     justify-content: center;
 }
 
-img{
+#arrow-left{
+    background: none;
+    border: none;
+}
+
+#arrow-left img{
+    width: 39px;
+}
+
+#arrow-left-box{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+#img1{
     width: 80%;
     margin-bottom: 7vh;
 }
