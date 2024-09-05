@@ -1,1 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --btn-color: #FF6064;
+    --marker-color: #D9D9D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow-left{
+    background: none;
+    border: none;
+}
+
+#arrow-left img{
+    width: 39px;
+}
+
+#arrow-left-box{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+#img1{
+    width: 80%;
+    margin-bottom: 7vh;
+}
+
+span{
+    font-size: larger;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#markers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 127px;
+}
+
+#markers button{
+    border: none;
+    background-color: var(--marker-color);
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+}
+
+#markers #selected{
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    width: 45px;
+    height: 20px;
+}
+
+#next{
+    width: 336px;
+    height: 45px;
+    border: none;
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 25px;
+}
