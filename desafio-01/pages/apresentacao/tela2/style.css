@@ -67,4 +67,13 @@ span{
     background-color: var(--btn-color);
     color: white;
     border-radius: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#next:hover{
+    /* shadowbox */
+    box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
 }
