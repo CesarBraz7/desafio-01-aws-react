@@ -1,1 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --btn-color: #FF6064;
+    --btn-login-on-hover: #DDDDDD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#arrow-left{
+    background: none;
+    border: none;
+}
+
+#arrow-left img{
+    width: 39px;
+}
+
+#arrow-left-box{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+#content button{
+    width: 336px;
+    height: 45px;
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 50px;
+    color: white;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#buttons button{
+    border: 0.5px solid black;
+    border-radius: 50px;
+    background-color: white ;
+    color: black;
+    width: 270px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+#button-img{
+    width: 21px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--btn-color);
+}
