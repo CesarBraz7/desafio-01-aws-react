@@ -22,11 +22,16 @@ main{
 
 #arrow-left{
     background: none;
+    cursor: pointer;
     border: none;
 }
 
-#arrow-left img{
-    width: 39px;
+svg path{
+    transition: fill 0.2s ease-in-out;
+}
+
+#arrow-left:hover svg path{
+    fill: var(--btn-color);
 }
 
 #arrow-left-box{
@@ -82,4 +87,13 @@ span{
     background-color: var(--btn-color);
     color: white;
     border-radius: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#next:hover{
+    /* shadowbox */
+    box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
 }

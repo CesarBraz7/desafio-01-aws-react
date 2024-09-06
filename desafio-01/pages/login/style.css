@@ -13,12 +13,17 @@
 }
 
 #arrow-left{
-    background: none;
+    background: white;
+    cursor: pointer;
     border: none;
 }
 
-#arrow-left img{
-    width: 39px;
+svg path{
+    transition: fill 0.2s ease-in-out;
+}
+
+#arrow-left:hover svg path{
+    fill: var(--btn-color);
 }
 
 #arrow-left-box{
@@ -64,7 +69,7 @@ h1{
 }
 
 #buttons button{
-    border: 0.5px solid black;
+    border: 1px solid black;
     border-radius: 50px;
     background-color: white ;
     color: black;
@@ -74,6 +79,24 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 4%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#buttons button:hover{
+    background-color: var(--btn-login-on-hover);
+}
+
+#login-btn{
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#login-btn:hover{
+    /* shadowbox */
+    box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
 }
 
 #button-img{
