@@ -2,6 +2,7 @@
 
 :root{
     --btn-and-bg-color: #FF6064;
+    --btn-back-on-hover: #DDDDDD;
 }
 
 *{
@@ -85,10 +86,24 @@ label{
 #return-btn{
     background-color: white;
     border: 1px solid black;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#return-btn:hover{
+    background-color: #DDDDDD;
 }
 
 #create-btn{
     background-color: var(--btn-and-bg-color);
     color: white;
     border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#create-btn:hover{
+    box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
 }
