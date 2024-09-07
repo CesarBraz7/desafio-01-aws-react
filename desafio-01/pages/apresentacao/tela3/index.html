@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav id="arrow-left-box">
-        <button id="arrow-left">
+        <button id="arrow-left" onclick="redirToHome()">
             <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.875 8.49993L0 16.4999L5.11875 24.7666C8.85625 31.0333 10.3187 32.7666 11.05 31.5666C11.7812 30.3666 11.375 28.6333 9.425 24.6333L6.825 19.1666L22.9125 18.8999C36.5625 18.4999 39 18.2333 39 16.4999C39 14.7666 36.5625 14.4999 22.9125 14.0999L6.825 13.8333L9.34375 8.49993C11.6187 3.83327 12.025 0.499933 10.3187 0.499933C9.99375 0.499933 7.55625 4.09993 4.875 8.49993Z" fill="black"/>
             </svg>       
@@ -19,11 +19,11 @@
             <img src="../../../assets/imgs/image2.svg" alt="img1" id="img1">
             <span>Track your productivity & gain insights</span>
             <div id="markers">
-                <button></button>
+                <button onclick="redirToScreen2()"></button>
                 <button id="selected"></button>
-                <button></button>
+                <button onclick="redirToScreen4()"></button>
             </div>
-            <button id="next">Next</button>
+            <button id="next" onclick="redirToScreen4()">Next</button>
         </div>
     </main>
     
