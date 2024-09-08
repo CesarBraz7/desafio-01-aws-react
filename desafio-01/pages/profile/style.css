@@ -71,6 +71,23 @@ input{
     margin-bottom: 3vh;
 }
 
+#show-pass-btn{
+    width: 100%;
+    border: 1px solid black;
+    background: #DDDDDD;
+    height: 50px;
+    border-radius: 25px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#show-pass-btn:hover{
+    box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+}
+
 #btn-container{
     margin-top: -3vh;
     width: 100%;
@@ -95,6 +112,7 @@ input{
     -webkit-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
 }
+
 #clear-btn{
     width: 47%;
     height: 50px;
