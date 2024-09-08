@@ -13,15 +13,16 @@
             <h2>User information</h2>
             <div id="profile-info-fields">
                 <label for="name">Name</label>
-                <input type="text" id="name" readonly value="John Doe">
+                <input type="text" id="name" readonly placeholder="John Doe">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" readonly value="johndoe@gmail.com">
+                <input type="email" id="email" readonly placeholder="johndoe@gmail.com">
                 <label for="password">Password</label>
-                <input type="password" id="password" readonly value="123456789Abc!">
+                <input type="password" id="password" readonly placeholder="123456789Abc!">
+                <button id="show-pass-btn" onclick="togglePassword()">Show password</button>
             </div>
             <div id="btn-container">
-                <button id="clear-btn">Clear data</button>
-                <button id="home-btn">Go to home</button>
+                <button id="clear-btn" onclick="clearData()">Clear data</button>
+                <button id="home-btn" onclick="redirToHome()">Go to home</button>
             </div>
         </section>
     </main>
