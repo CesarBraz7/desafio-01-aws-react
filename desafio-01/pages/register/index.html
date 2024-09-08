@@ -14,7 +14,7 @@
         <section id="form-container">
             <div id="form-box">
                 <h1>Create your account</h1>
-                <form id="form">
+                <form id="form" onsubmit="return false">
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Name">
                     <label for="email">E-mail</label>
@@ -24,8 +24,8 @@
                     <label for="confirm-password">Confirm password</label>
                     <input type="password" id="confirm-password" placeholder="Confirm password">
                     <div id="button-field">
-                        <button id="return-btn">Go Back</button>
-                        <button id="create-btn">Create Account</button>
+                        <button onclick="redirToLogin()" id="return-btn">Go Back</button>
+                        <button onclick="register()" id="create-btn">Create Account</button>
                     </div>
                 </form>
             </div>
