@@ -1,5 +1,3 @@
-const storage = localStorage
-
 const redirToLogin = () => window.location.href = "../login/index.html"
 
 const register = () => {
@@ -12,23 +10,21 @@ const register = () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault()
 
-        const isValid = () => {
-            if(validatePassword(password)){
-                if(password === confirmPassword){
-                    storage.setItem("nome", nome)
-                    storage.setItem("email", email)
-    
-                    form.submit()
-                } else {
-                    alert("Passwords not matching.")
-                }
+        if(validatePassword(password)){
+            if(password === confirmPassword){
+                localStorage.setItem("nome", nome)
+                localStorage.setItem("email", email)
+                localStorage.setItem("password", password)
+                
+                window.location.href = "../profile/index.html"
+                return true
             } else {
-                alert("Invalid password. The password must contain at least 8 characters, including uppercase and lowercase letters, numbers and special characters.")
+                alert("Passwords not matching.")
+                return false
             }
-        }
-
-        if(isValid){
-            window.location.href = "../profile/index.html"
+        } else {
+            alert("Invalid password. The password must contain at least 8 characters, including uppercase and lowercase letters, numbers and special characters.")
+            return false
         }
 
     })
