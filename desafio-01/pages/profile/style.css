@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --bg-color: #FF6064;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    gap: 6vh;
+}
+
+#profile-info{
+    background-color: white;
+    /* width: 30vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 4rem 3rem;
+    gap: 6vh;
+    -webkit-box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.49);
+    box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.49);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0 4rem;
+}
+
+label{
+    margin-left: 4%;
+    margin-bottom: 4px;
+}
+
+#profile-info-fields{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+    margin-bottom: 3vh;
+}
+
+#btn-container{
+    margin-top: -3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-btn{
+    width: 47%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    color: white;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#home-btn:hover{
+    box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 2px 8px -1px rgba(0,0,0,0.75);
+}
+#clear-btn{
+    width: 47%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#clear-btn:hover{
+    background-color: #DDDDDD;
+}
