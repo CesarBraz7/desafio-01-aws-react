@@ -78,3 +78,96 @@ span{
     -webkit-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 5px 8px -1px rgba(0,0,0,0.75);
 }
+
+@media (max-width: 375px) {
+    img{
+        width: 75%;
+    }
+
+    span{
+        font-size: xx-large;
+        font-weight: 700;
+        width: 80%;
+        text-align: center;
+    }
+
+    #markers{
+        width: 90px;
+    }
+
+    #markers button{
+        width: 20px;
+        height: 20px;
+    }
+
+    #markers #selected{
+        width: 30px;
+        height: 15px;
+    }
+
+    #next{
+        width: 300px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px){
+
+    img{
+        width: 75%;
+    }
+
+    span{
+        font-size: xx-large;
+        font-weight: 700;
+        width: 80%;
+        text-align: center;
+    }
+
+    #markers{
+        width: 90px;
+    }
+
+    #markers button{
+        width: 20px;
+        height: 20px;
+    }
+
+    #markers #selected{
+        width: 30px;
+        height: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    span{
+        font-size: x-large;
+    }
+
+    img{
+        width: 70%;
+    }
+
+    #markers{
+        width: 110px;
+    }
+
+    #markers button{
+        width: 23px;
+        height: 23px;
+    }
+
+    #markers #selected{
+        width: 34px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    img{
+        width: 70%;
+    }
+    
+    span{
+        font-size: x-large;
+    }
+}

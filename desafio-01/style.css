@@ -32,3 +32,60 @@ section {
 #loading {
     width: 90px;
 }
+
+@media (max-width: 375px) {
+    #logo-pomo {
+        width: 180px;
+    }
+    
+    #loading {
+        width: 60px;
+    }
+
+    section{
+        margin-top: 8vh;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px){
+    #loading {
+        width: 60px;
+    }
+
+    #logo-pomo {
+        width: 270px;
+        margin-top: 15vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #loading {
+        margin-top: 20vh;
+        width: 60px;
+    }
+
+    #logo-pomo {
+        margin-top: 10vh;
+        width: 350px;
+    }
+
+    section{
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 1026px) and (max-width: 1440px){
+    #loading {
+        margin-top: 20vh;
+        width: 60px;
+    }
+
+    #logo-pomo {
+        margin-top: 10vh;
+        width: 350px;
+    }
+
+    section{
+        justify-content: space-evenly;
+    }
+}
